@@ -120,7 +120,10 @@ class _LoginPageState extends State<LoginPage> {
                   child: Image.asset(
                     'assets/fullscre1en.jpg',
                     // #Image Url: https://unsplash.com/photos/bOBM8CB4ZC4
-                    fit: BoxFit.fitHeight,
+                    fit: BoxFit.fill,
+                    height: size.height,
+                    width: size.width,
+
                   ),
                 ),
                 // Container(
@@ -211,9 +214,9 @@ class _LoginPageState extends State<LoginPage> {
                                               ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: const BorderSide(
-                                                    color: Colors.white),
+                                                    color: Colors.black),
                                                 borderRadius:
-                                                    BorderRadius.circular(10),
+                                                    BorderRadius.circular(150),
                                               ),
                                             ),
                                             validator: (value) {
@@ -277,9 +280,9 @@ class _LoginPageState extends State<LoginPage> {
                                               ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: const BorderSide(
-                                                    color: Colors.white),
+                                                    color: Colors.black),
                                                 borderRadius:
-                                                    BorderRadius.circular(10),
+                                                    BorderRadius.circular(150),
                                               ),
                                             ),
                                             validator: (value) {
@@ -389,10 +392,7 @@ class _LoginPageState extends State<LoginPage> {
                                                 children: [
                                                   SizedBox(
                                                     width:
-                                                        MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            .3,
+                                                        MediaQuery.of(context).size.width *.2,
                                                     height: 2,
                                                     child: DecoratedBox(
                                                       decoration: BoxDecoration(
@@ -407,14 +407,13 @@ class _LoginPageState extends State<LoginPage> {
                                                   ),
                                                   SizedBox(
                                                     width:
-                                                        MediaQuery.of(context)
-                                                                .size
-                                                                .width *
-                                                            .3,
+                                                        MediaQuery.of(context).size.width *.2,
                                                     height: 2,
                                                     child: DecoratedBox(
-                                                      decoration: BoxDecoration(
-                                                          color: Colors.grey),
+                                                      decoration: BoxDecoration
+                                                        (
+                                                          color: Colors.grey
+                                                      ),
                                                     ),
                                                   ),
                                                 ],
@@ -423,8 +422,8 @@ class _LoginPageState extends State<LoginPage> {
                                                 closedBuilder:
                                                     (_, openContainer) {
                                                   return Container(
-                                                    height: 60,
-                                                    width: 150,
+                                                    height: 54,
+                                                    width: 280,
                                                     child: ElevatedButton(
                                                       style: ButtonStyle(
                                                           backgroundColor:
@@ -457,7 +456,7 @@ class _LoginPageState extends State<LoginPage> {
                                                       child: const Text(
                                                         "   Register   ",
                                                         style: TextStyle(
-                                                          fontSize: 20,
+                                                          fontSize: 15,
                                                         ),
                                                       ),
                                                     ),
